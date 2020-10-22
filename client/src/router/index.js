@@ -25,11 +25,7 @@ import ProductCreate from '@/components/Products/CreateProduct'
 import ProductEdit from '@/components/Products/EditProduct'
 import ProductShow from '@/components/Products/ShowProduct'
 
-// Fishs
-import FishIndex from '@/components/Fishs/Index'
-import FishCreate from '@/components/Fishs/CreateFish'
-import FishEdit from '@/components/Fishs/EditFish'
-import FishShow from '@/components/Fishs/ShowFish'
+
 
 // Upload Testing
 import Upload from '@/components/Utils/Upload'
@@ -89,28 +85,7 @@ export default new Router({
     component: BlogShow
     },
 
-    // Fishs
-    {
-        path: '/fishs',
-        name: 'fishs',
-        component: FishIndex
-        },
-        {
-        path: '/fish/create',
-        name: 'fish-create',
-        component: FishCreate
-        },
-        {
-        path: '/fish/edit/:fishId',
-        name: 'fish-edit',
-        component: FishEdit
-        },
-        {
-        path: '/fish/:fishId',
-        name: 'fish',
-        component: FishShow
-        },
-
+    
     // Products
     {
       path: '/products',

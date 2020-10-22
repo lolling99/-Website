@@ -4,7 +4,7 @@ const isAuthenController = require('./authen/isAuthenController')
 const BlogController = require('./controllers/BlogController')
 const CommentController = require('./controllers/CommentController')
 const ProductController = require('./controllers/ProductController')
-const FishController = require('./controllers/FishController')
+
 
 let multer = require("multer")
 // upload section
@@ -111,29 +111,6 @@ module.exports = (app) => {
     // get all comment
     app.get('/products',
         ProductController.index
-    )
-
-
-    // product fish
-    // create fish
-    app.post('/fish',
-        FishController.create
-    )
-    // edit fish, suspend, active
-    app.put('/product/:fishId',
-        FishController.put
-    )
-    // delete fish
-    app.delete('/fish/:fishId',
-        FishController.remove
-    )
-    // get fish by id
-    app.get('/fish/:fishId',
-        FishController.show
-    )
-    // get all comment
-    app.get('/fishs',
-        FishController.index
     )
 
 
